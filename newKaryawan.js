@@ -44,10 +44,10 @@ const tambahKaryawan = () => {
         // daftarKaryawan.push(karyawanBaru) 
     } else {
         // jika edit
-        if(karyawanBaru.nik.length == 10) {
+        if(karyawanBaru.nik.length == 16) {
             daftarKaryawan[mode] = karyawanBaru
         } else {
-            alert("NIK yang anda masukan tidak valid. Mohon isi ulang")
+            alert("NIK yang anda masukan tidak valid. Mohon isi ulang(isi dengan 16 digit)")
             document.getElementById("txtNik").value =''
             document.getElementById("txtNama").value = daftarKaryawan[indexEdit].nama;
             document.getElementById("txtMasa").value = daftarKaryawan[indexEdit].masaKerja;
